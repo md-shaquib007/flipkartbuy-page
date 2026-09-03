@@ -3,109 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="OPPO Find X8 — shop smartphones, electronics and more on Flipkart.">
-  <title>OPPO Find X8 | Flipkart</title>
-  <style>
-    :root {
-      --blue: #2874f0;
-      --ink: #172337;
-      --muted: #6b7280;
-      --line: #e4e7eb;
-      --green: #168b3a;
-      --orange: #ff9f00;
-      --surface: #fff;
-      --page: #f1f3f6;
+  <meta name="description" content="Buy OPPO Find X8 (Star Grey, 256 GB, 12 GB RAM) online at best price on Flipkart. Features 50MP triple camera, AMOLED display, and Dimensity 9400.">
+  <meta name="theme-color" content="#2874f0">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="OPPO Find X8 (256 GB, 12 GB RAM) — Flipkart">
+  <meta property="og:description" content="Shop OPPO Find X8 with 12% OFF + Extra ₹10,000 off on exchange.">
+  <meta property="og:image" content="phoneoppo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%232874f0'/><polygon points='50,15 63,40 90,44 70,63 75,90 50,77 25,90 30,63 10,44 37,40' fill='%23ffe500'/></svg>">
+
+  <title>OPPO Find X8 (Star Grey, 256 GB) (12 GB RAM) | Flipkart</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "OPPO Find X8 (Star Grey, 256 GB)",
+    "image": "phoneoppo.png",
+    "description": "OPPO Find X8 smartphone with 12 GB RAM, 256 GB Storage, 6.59 inch AMOLED display and 50MP Triple Camera.",
+    "brand": { "@type": "Brand", "name": "OPPO" },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.4",
+      "reviewCount": "7220"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "INR",
+      "price": "69999",
+      "availability": "https://schema.org/InStock"
     }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { margin: 0; color: var(--ink); background: var(--page); font-family: Arial, Helvetica, sans-serif; }
-    button, input { font: inherit; }
-    button { cursor: pointer; }
-
-    .topbar { background: var(--blue); color: #fff; }
-    .topbar-inner { display: flex; align-items: center; gap: 24px; max-width: 1280px; min-height: 64px; margin: auto; padding: 0 24px; }
-    .brand { color: #fff; text-decoration: none; font-size: 22px; font-style: italic; font-weight: 700; letter-spacing: -.7px; line-height: 1; }
-    .brand small { display: block; margin-top: 4px; color: #ffe500; font-size: 10px; font-style: normal; letter-spacing: 0; text-align: center; }
-    .search { display: flex; flex: 1; max-width: 650px; height: 40px; overflow: hidden; border-radius: 2px; background: #fff; box-shadow: 0 2px 4px #0b3f9c44; }
-    .search input { flex: 1; min-width: 0; border: 0; outline: 0; padding: 0 16px; color: #333; }
-    .search button { width: 48px; border: 0; background: #fff; color: var(--blue); font-size: 19px; }
-    .top-action { border: 0; background: transparent; color: #fff; font-weight: 700; white-space: nowrap; }
-    .login { min-width: 112px; height: 32px; background: #fff; color: var(--blue); }
-    .cart { font-size: 15px; }
-
-    .categories { background: #fff; box-shadow: 0 1px 3px #0000001a; }
-    .categories-inner { display: flex; justify-content: space-between; gap: 18px; max-width: 1280px; margin: auto; padding: 13px 24px; }
-    .category { color: #252525; font-size: 13px; font-weight: 600; text-decoration: none; white-space: nowrap; }
-    .category:hover, .category.active { color: var(--blue); }
-
-    .breadcrumbs { max-width: 1280px; margin: 0 auto; padding: 16px 24px 12px; color: #878787; font-size: 12px; }
-    .breadcrumbs a { color: #6d6d6d; text-decoration: none; }
-    .breadcrumbs a:hover { color: var(--blue); }
-    .crumb-separator { margin: 0 9px; color: #aaa; }
-
-    .product { display: grid; grid-template-columns: minmax(360px, 47%) 1fr; max-width: 1280px; min-height: 650px; margin: 0 auto 32px; background: var(--surface); box-shadow: 0 1px 2px #00000012; }
-    .gallery { display: grid; grid-template-columns: 70px 1fr; gap: 22px; padding: 28px 30px; border-right: 1px solid var(--line); }
-    .thumbs { display: flex; flex-direction: column; gap: 12px; }
-    .thumb { display: grid; place-items: center; width: 64px; height: 74px; padding: 4px; border: 1px solid var(--line); border-radius: 4px; background: #fff; }
-    .thumb.selected { border: 2px solid var(--blue); }
-    .thumb img { max-width: 100%; max-height: 100%; object-fit: contain; }
-    .hero-image { position: relative; display: grid; place-items: center; min-height: 530px; }
-    .hero-image img { width: min(100%, 465px); max-height: 570px; object-fit: contain; }
-    .heart { position: absolute; top: 2px; right: 3px; display: grid; place-items: center; width: 42px; height: 42px; border: 1px solid var(--line); border-radius: 50%; background: #fff; color: #9ba1aa; font-size: 21px; box-shadow: 0 2px 8px #00000012; }
-    .heart.active { color: #e53935; }
-    .gallery-actions { position: absolute; bottom: 0; left: 50%; display: flex; gap: 12px; width: min(100%, 440px); transform: translateX(-50%); }
-    .gallery-actions button { flex: 1; height: 48px; border: 0; border-radius: 2px; color: #fff; font-weight: 700; text-transform: uppercase; }
-    .add { background: var(--orange); }
-    .buy { background: #fb641b; }
-
-    .details { padding: 28px 34px 40px; }
-    .eyebrow { color: var(--muted); font-size: 12px; }
-    h1 { margin: 9px 0 11px; color: #212121; font-size: 24px; font-weight: 500; line-height: 1.35; }
-    .rating-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-    .rating { padding: 5px 8px; border-radius: 4px; background: var(--green); color: #fff; font-size: 13px; font-weight: 700; }
-    .assured { color: #2874f0; font-size: 11px; font-weight: 700; }
-    .reviews { color: var(--muted); font-size: 13px; }
-    .divider { height: 1px; margin: 22px 0; background: var(--line); }
-    .label { margin-bottom: 8px; color: var(--muted); font-size: 12px; }
-    .price-row { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
-    .price { color: #212121; font-size: 34px; font-weight: 500; }
-    .mrp { color: #878787; font-size: 14px; }
-    .discount { color: var(--green); font-size: 14px; font-weight: 700; }
-    .offer-strip { margin: 18px 0; padding: 10px 12px; border-radius: 3px; background: #f0fff4; color: var(--green); font-size: 13px; font-weight: 700; }
-    .section-title { margin: 0 0 14px; font-size: 16px; }
-    .offer-list { display: grid; gap: 14px; padding: 0; margin: 0; list-style: none; }
-    .offer-list li { display: grid; grid-template-columns: 20px 1fr; gap: 7px; color: #333; font-size: 13px; line-height: 1.45; }
-    .tag { color: var(--green); font-size: 15px; font-weight: 700; }
-    .offer-list strong { margin-right: 4px; }
-    .link { color: var(--blue); font-weight: 600; text-decoration: none; }
-    .specs { display: grid; grid-template-columns: repeat(2, minmax(120px, 1fr)); gap: 10px 20px; margin-top: 18px; color: #555; font-size: 13px; }
-    .specs span { color: #878787; }
-
-    @media (max-width: 860px) {
-      .topbar-inner { gap: 12px; padding: 12px 16px; flex-wrap: wrap; }
-      .search { order: 3; flex-basis: 100%; max-width: none; }
-      .categories-inner { justify-content: flex-start; overflow-x: auto; padding: 12px 16px; }
-      .product { grid-template-columns: 1fr; margin: 0 12px 24px; }
-      .gallery { border-right: 0; border-bottom: 1px solid var(--line); }
-      .details { padding: 24px; }
-    }
-    @media (max-width: 520px) {
-      .topbar-inner { min-height: 112px; }
-      .top-action:not(.login) { display: none; }
-      .login { margin-left: auto; }
-      .breadcrumbs { padding: 13px 16px 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-      .product { margin: 0; }
-      .gallery { grid-template-columns: 52px 1fr; gap: 12px; padding: 18px 14px 72px; }
-      .thumb { width: 48px; height: 60px; }
-      .hero-image { min-height: 380px; }
-      .hero-image img { max-height: 390px; }
-      .gallery-actions { bottom: 12px; width: calc(100% - 28px); }
-      .details { padding: 22px 16px 30px; }
-      h1 { font-size: 20px; }
-      .price { font-size: 30px; }
-    }
-  </style>
+  }
+  </script>
 </head>
 <body>
   <header class="topbar">
@@ -117,7 +51,9 @@
       </form>
       <button class="top-action login" type="button">Login</button>
       <button class="top-action" type="button">Become a Seller</button>
-      <button class="top-action cart" type="button">🛒 Cart</button>
+      <button class="top-action cart" type="button" onclick="showToast('Your cart has ' + cartCount + ' item(s)')">
+        🛒 Cart <span class="cart-badge" id="cartCountBadge">0</span>
+      </button>
     </div>
   </header>
 
@@ -135,20 +71,30 @@
     </div>
   </nav>
 
-  <div class="breadcrumbs"><a href="#">Home</a><span class="crumb-separator">›</span><a href="#">Mobiles &amp; Accessories</a><span class="crumb-separator">›</span><a href="#">Mobiles</a><span class="crumb-separator">›</span>OPPO Mobiles</div>
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="#">Home</a><span class="crumb-separator">›</span>
+    <a href="#">Mobiles &amp; Accessories</a><span class="crumb-separator">›</span>
+    <a href="#">Mobiles</a><span class="crumb-separator">›</span>
+    <span>OPPO Mobiles</span>
+  </nav>
 
   <main class="product" id="product">
     <section class="gallery" aria-label="Product gallery">
       <div class="thumbs">
-        <button class="thumb selected" type="button" aria-label="View product image"><img src="phoneoppo.png" alt="OPPO Find X8 front and back"></button>
-        <button class="thumb" type="button" aria-label="View alternate product image"><img src="phoneoppo.png" alt="OPPO Find X8 alternate view"></button>
+        <button class="thumb selected" type="button" aria-label="View front & back of OPPO Find X8" onclick="selectThumb(this)">
+          <img src="phoneoppo.png" alt="OPPO Find X8 front and back view">
+        </button>
+        <button class="thumb" type="button" aria-label="View camera module of OPPO Find X8" onclick="selectThumb(this)">
+          <img src="phoneoppo.png" alt="OPPO Find X8 camera setup view">
+        </button>
       </div>
+
       <div class="hero-image">
-        <button class="heart" type="button" aria-label="Add to wishlist" onclick="this.classList.toggle('active')">♡</button>
-        <img src="phoneoppo.png" alt="OPPO Find X8 smartphone in white and black">
+        <button class="heart" id="wishlistBtn" type="button" aria-label="Add to wishlist" aria-pressed="false" onclick="toggleWishlist()">♡</button>
+        <img id="mainProductImg" src="phoneoppo.png" alt="OPPO Find X8 smartphone in Star Grey">
         <div class="gallery-actions">
-          <button class="add" type="button">🛒 Add to cart</button>
-          <button class="buy" type="button">⚡ Buy now</button>
+          <button class="add" type="button" onclick="addToCart()">🛒 Add to cart</button>
+          <button class="buy" type="button" onclick="buyNow()">⚡ Buy now</button>
         </div>
       </div>
     </section>
@@ -156,31 +102,125 @@
     <section class="details" aria-labelledby="product-title">
       <div class="eyebrow">OPPO Find Series</div>
       <h1 id="product-title">OPPO Find X8 (Star Grey, 256 GB) (12 GB RAM)</h1>
-      <div class="rating-row"><span class="rating">4.4 ★</span><span class="reviews">1,40,868 Ratings &amp; 7,220 Reviews</span><span class="assured">✓ Assured</span></div>
+      
+      <div class="rating-row">
+        <span class="rating">4.4 ★</span>
+        <span class="reviews">1,40,868 Ratings &amp; 7,220 Reviews</span>
+        <span class="assured">✓ Assured</span>
+      </div>
+
       <div class="divider"></div>
+      
       <div class="label">Special price</div>
-      <div class="price-row"><span class="price">₹69,999</span><del class="mrp">₹79,999</del><span class="discount">12% off</span></div>
+      <div class="price-row">
+        <span class="price">₹69,999</span>
+        <del class="mrp">₹79,999</del>
+        <span class="discount">12% off</span>
+      </div>
+      
       <div class="offer-strip">Extra ₹10,000 off on exchange</div>
+
+      <!-- Variant Selectors -->
+      <div class="variant-group">
+        <label>Color</label>
+        <div class="variant-options">
+          <button class="variant-btn selected" onclick="selectVariant(this, 'Color')">Star Grey</button>
+          <button class="variant-btn" onclick="selectVariant(this, 'Color')">Space Black</button>
+        </div>
+      </div>
+
+      <div class="variant-group">
+        <label>Storage / RAM</label>
+        <div class="variant-options">
+          <button class="variant-btn selected" onclick="selectVariant(this, 'Storage')">256 GB / 12 GB RAM</button>
+          <button class="variant-btn" onclick="selectVariant(this, 'Storage')">512 GB / 16 GB RAM</button>
+        </div>
+      </div>
+
+      <!-- Delivery Pincode Checker -->
+      <div class="variant-group">
+        <label for="pincodeInput">Delivery Check</label>
+        <div class="pincode-box">
+          <input type="text" id="pincodeInput" placeholder="Enter 6-digit Pincode" maxlength="6">
+          <button type="button" onclick="checkPincode()">Check</button>
+        </div>
+        <div class="pincode-result" id="pincodeResult"></div>
+      </div>
+
+      <div class="divider"></div>
+
       <h2 class="section-title">Available offers</h2>
       <ul class="offer-list">
         <li><span class="tag">▣</span><span><strong>Bank Offer</strong> 5% Unlimited Cashback on Flipkart Axis Bank Credit Card <a class="link" href="#">T&amp;C</a></span></li>
         <li><span class="tag">▣</span><span><strong>Special Price</strong> Get extra ₹6,999 off (price inclusive of cashback/coupon) <a class="link" href="#">T&amp;C</a></span></li>
-        <li><span class="tag">▣</span><span>Extra 10% off on combo mobile with mobile — OPPO <a class="link" href="#">T&amp;C</a></span></li>
-        <li><span class="tag">▣</span><span>EMI starting from ₹2,459/month. <a class="link" href="#">View plans ›</a></span></li>
+        <li><span class="tag">▣</span><span>Extra 10% off on combo mobile purchase <a class="link" href="#">T&amp;C</a></span></li>
+        <li><span class="tag">▣</span><span>No Cost EMI starting from ₹2,459/month. <a class="link" href="#">View plans ›</a></span></li>
       </ul>
+
       <div class="divider"></div>
+
       <h2 class="section-title">Highlights</h2>
-      <div class="specs"><div><span>RAM / Storage</span><br>12 GB / 256 GB</div><div><span>Display</span><br>6.59 inch AMOLED</div><div><span>Camera</span><br>Triple 50MP rear</div><div><span>Battery</span><br>5630 mAh</div></div>
+      <div class="specs">
+        <div><span>RAM / Storage</span><br>12 GB / 256 GB</div>
+        <div><span>Display</span><br>6.59 inch AMOLED 120Hz</div>
+        <div><span>Camera</span><br>Triple 50MP Hasselblad</div>
+        <div><span>Battery</span><br>5630 mAh 80W SuperVOOC</div>
+      </div>
     </section>
   </main>
 
+  <div id="toastNotice"></div>
+
   <script>
-    document.querySelectorAll('.thumb').forEach((thumb) => {
-      thumb.addEventListener('click', () => {
-        document.querySelectorAll('.thumb').forEach((item) => item.classList.remove('selected'));
-        thumb.classList.add('selected');
-      });
-    });
+    let cartCount = 0;
+
+    function selectThumb(btn) {
+      document.querySelectorAll('.thumb').forEach(t => t.classList.remove('selected'));
+      btn.classList.add('selected');
+    }
+
+    function toggleWishlist() {
+      const btn = document.getElementById('wishlistBtn');
+      const isFav = btn.classList.toggle('active');
+      btn.setAttribute('aria-pressed', isFav);
+      btn.textContent = isFav ? '♥' : '♡';
+      showToast(isFav ? 'Added to Wishlist' : 'Removed from Wishlist');
+    }
+
+    function addToCart() {
+      cartCount++;
+      document.getElementById('cartCountBadge').textContent = cartCount;
+      showToast('Item added to Cart!');
+    }
+
+    function buyNow() {
+      showToast('Proceeding to Checkout...');
+    }
+
+    function selectVariant(btn, type) {
+      const parent = btn.parentElement;
+      parent.querySelectorAll('.variant-btn').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      showToast(type + ' updated to: ' + btn.textContent);
+    }
+
+    function checkPincode() {
+      const pin = document.getElementById('pincodeInput').value.trim();
+      const res = document.getElementById('pincodeResult');
+      if (/^\d{6}$/.test(pin)) {
+        res.style.color = '#168b3a';
+        res.textContent = '✓ Delivery by Tomorrow, 11:00 AM | Free Delivery';
+      } else {
+        res.style.color = '#e53935';
+        res.textContent = 'Please enter a valid 6-digit Pincode';
+      }
+    }
+
+    function showToast(msg) {
+      const container = document.getElementById('toastNotice');
+      container.innerHTML = `<div class="toast-msg" role="alert">${msg}</div>`;
+      setTimeout(() => { container.innerHTML = ''; }, 3000);
+    }
   </script>
 </body>
 </html>
